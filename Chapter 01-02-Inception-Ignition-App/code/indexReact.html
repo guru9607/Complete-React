@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Namaste-React</title>
+</head>
+<body>
+    <h1>Hello top of root</h1>
+      <div id="root">
+        <h1>Hello I'm Guruprasad</h1>       <!-- The code under root div will be replaced when react renders its own tag  -->
+      </div>
+    <h1>Hello below of root</h1>
+      <div id="para"></div>
+
+
+  <!-- CDN Links React -->
+  <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+<script type="module" src="./App.js"></script>
+</body>
+</html>
+
+<!-- 
+`npm install -D parcel` 
+- It is a dev dependencies theerfore we wrote `-D`, we we get {parcel: ^2.8.3}, also we get package-lock.json, also node_modules
+- Our project have its own package.json, i.e. dependencies, in node modules parcel will have its own packacge.json for managing its dependencies, this is called transitive dependencies
+- node modules is therefore so huge, it is collection of dependencies.
+- Therefore, we don't put it in production, and put it in `.gitignore`.
+
+###############################################################################
+- Now we will use parcel to ignite our app
+- npx parcel index.html  (npx executes parcel for us)
+- Parcel created a server for us.
+- Beautiful error
+- Automatically Reloads
+
+###############################################################################
+
+`npm install react`  
+`npm i react-dom`             (No `-D` because it is not dev dependencies)
+Q. We already have cdn then why install it?
+Ans. This is because we would have to make network calls to unpackage which is not efficient.
+
+- When we go to local host server it will say react not define, therefore we need to import react first in App.js
+- It says normal js file cannot have import, therefore we write type='module'
+- <script type="module" src="./App.js"></script>
+
+
+-->
+
+<!-- Modules vs script 
+- Variables and functions defined in a module are scoped to that module by default, meaning they are not accessible from outside unless explicitly exported.
+- Modules support explicit exports and imports, allowing developers to selectively expose certain variables or functions from a module and import them into other modules where needed.
+
+
+Parcel:
+Dev Build
+Local Server
+Hot module Replacement using file watching algorithm written in C++. (Automatically Reloads)
+Faster builds because of caching
+Image optimization
+Minification
+Bundling
+Compression
+Consistent Hashing
+Code Splitting
+Differential Bundling (for supporting old browsers i.e. different builds)
+Good Error Handling
+Allow us to host on https
+Creates different build for development and production
+
+`npx parcel build index.html` Error, because in package.json we have {main: App.json} which suggest this is our entry point. Remove this.
+
+#########################################################################
+
+- What is dist?
+Basically when we execute parcel, `npx parcel index.html it puts all the files in dist, when we refresh it uses cache and dist for showing everything to us.
+Now, when we do `npx build parcel index.html` it will take more time becuase it is production build, minifies everything  and create 3 files ready for production.
+
+Therefore, this parcel-cache and dist are reproucable therefore put it in .gitignore
+
+#########################################################################
+
+What is browser list in package.json?
+Use to tell parcel which browser version our apps must run onto, no need to put all browser, and all countries, more buldles and more slow website. Therefore, gov website are slow
+
+
+
+
+
+
+-->
