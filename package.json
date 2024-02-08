@@ -1,0 +1,31 @@
+{
+  "name": "complete-react",
+  "version": "1.0.0",
+  "description": "Practicing React",
+  "scripts": {
+    "start": "parcel Episode_04-Show-me-the-code/index.html",
+    "build": "parcel build Episode_04-Show-me-the-code/index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guru9607/Complete-React.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Guruprasad Gaikwad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guru9607/Complete-React/issues"
+  },
+  "homepage": "https://github.com/guru9607/Complete-React#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <h1>Not rendered 🚀</h1>
+    </div>
+    <script type="module" src="./App.js"></script>
+
+</body>
+</html>
+
+<!-- ####################################################################################################
+
+Swiggy Json dekhne ke baad question arises why it is like that
+Config driven UI?
+- A configuration-driven user interface (UI) means instead of writing code to define how your UI looks and behaves, you use configuration files or data to specify things like layout, colors, and what content to show.
+- Writing UI only once, and then on the basis of data my UI is getting changed.
+
+###########################################################################################################
+
+Why key?
+- When in a container new card is added, if no key is passed, react basically rerenders everything inside a container and it results into major performance hit.
+- To uniquely identify a card and avoid rerendering we make use of a key. Beautiful❤️
+- We can make use of index right ? But react says it is a bad practice becuase order of items can change right.
+
+- not using keys(not acceptable) <<<<<<<<<<<<< using index <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< unique id ✅🚀
+
+########################################################################################################### -->
+
